@@ -1,990 +1,181 @@
-<!DOCTYPE html>
-<html lang="en" class="no-js">
-<head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
-    <title>Bernard Dwamena- Resume | CV | vCard </title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <meta name="description" content="Bernard - Resume / CV / vCard " />
-    <meta name="keywords" content="vcard, resposnive, retina, resume, jquery, css3, bootstrap, Material CV, portfolio" />
-    <meta name="author" content="Bernard" />
-    <link rel="shortcut icon" href="favicon.ico">
+<!doctype html>
+<html lang="en" class="h-100" data-bs-theme="auto">
+  <head><script src="https://www.benitapollosolutions.com/color-modes.js"></script>
 
-    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
-    <link rel="stylesheet" href="css/animate.css" type="text/css">
-    <link rel="stylesheet" href="css/animations.css" type="text/css">
-    <link rel="stylesheet" href="css/owl.carousel.css" type="text/css">
-    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
-    <link rel="stylesheet" href="css/main.css" type="text/css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="At Benit Apollo Solutions, we are passionate about harnessing the power of technology to drive business success. As a leading software engineering and IT support services company based in the US, europe, asia and africa, we specialize in crafting tailored solutions that meet the unique needs of our clients.">
+    <meta name="author" content="Bernard Dwamena">
+    <meta http-equiv="refresh" content="3600, url=https://www.benitapollosolutions.com/index.html">
+      <link type="image/x-icon" rel="icon" href="https://www.benitapollosolutions.com/favicon.ico">
+    <title> Welcome  · BAS for Business v2.3</title> 
 
-    <script src="https://bernarddwamena.github.io/js/modernizr.custom.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+
+<link href="https://www.benitapollosolutions.com/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        width: 100%;
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+
+      .btn-bd-primary {
+        --bd-violet-bg: #712cf9;
+        --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+
+        --bs-btn-font-weight: 600;
+        --bs-btn-color: var(--bs-white);
+        --bs-btn-bg: var(--bd-violet-bg);
+        --bs-btn-border-color: var(--bd-violet-bg);
+        --bs-btn-hover-color: var(--bs-white);
+        --bs-btn-hover-bg: #6528e0;
+        --bs-btn-hover-border-color: #6528e0;
+        --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+        --bs-btn-active-color: var(--bs-btn-hover-color);
+        --bs-btn-active-bg: #5a23c8;
+        --bs-btn-active-border-color: #5a23c8;
+      }
+
+      .bd-mode-toggle {
+        z-index: 1500;
+      }
+
+      .bd-mode-toggle .dropdown-menu .active .bi {
+        display: block !important;
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="https://www.benitapollosolutions.com/cover.css" rel="stylesheet">
+    <script type="module" src="https://www.benitapollosolutions.com/message.js"></script>
   </head>
-
-  <body>
-    <!-- Loading animation -->
-   <!-- <div class="preloader">
-      <div class="preloader-animation">
-        <div class="preloader-spinner">
-        </div>
-      </div>
-    </div>-->
-    <!-- /Loading animation -->
-
-    <div id="page" class="page one-page-style">
-      <!-- Header -->
-      <header id="site_header" class="header mobile-menu-hide">
-        <div class="header-content clearfix">
-          <div class="my-photo">
-            <img src="images/photo.jpg" alt="image">
-          </div>
-
-          <div class="site-title-block">
-            <div class="site-title">Dwamena Bernard</div>
-          </div>
-
-          <!-- Navigation -->
-          <div class="site-nav">
-            <!-- Main menu -->
-            <ul id="nav" class="site-main-menu">
-              <li>
-                <a class="pt-trigger" href="#about-me">About Me</a><!-- href value = data-id without # of .pt-page. -->
-              </li>
-              <li>
-                <a class="pt-trigger" href="#resume">Resume</a>
-              </li>
-              <li>
-                <a class="pt-trigger" href="#portfolio">Portfolio</a>
-              </li>
-              <li>
-                <a class="pt-trigger" href="#blog">Blog</a>
-              </li>
-              <li>
-                <a class="pt-trigger" href="#contact">Contact</a>
-              </li>
-            </ul>
-            <!-- /Main menu -->
-          </div>
-          <!-- Navigation -->
-
-          <!-- Social Links -->
-          <div class="social-links">
-            <a href="https://www.twitter.com/bernarddwamena" target="_blank"><i class="fab fa-twitter"></i></a>
-            <a href="https://www.linkedin.com/in/BernardDwamena" target="_blank"><i class="fab fa-linkedin"></i></a>
-          </div>
-          <!-- / Social Links -->
-
-          <!-- Copyrights -->
-          <div class="copyrights">© 2025 All rights reserved.</div>
-          <!-- / Copyrights -->
-        </div>
-      </header>
-      <!-- /Header -->
-
-      <!-- Mobile Header -->
-      <div class="mobile-header mobile-visible">
-        <div class="mobile-logo-container">
-          <div class="mobile-header-image">
-            <a href="#">
-                <img src="images/photo.jpg" alt="image">
-            </a>
-          </div>
-          <div class="mobile-site-title"><a href="#">Dwamena Bernard</a></div>
-        </div>
-
-        <a class="menu-toggle mobile-visible">
-          <i class="fa fa-bars"></i>
-        </a>
-      </div>
-      <!-- /Mobile Header -->
-
-      <!-- Arrows Nav -->
-      <div class="lmpixels-scroll-to-top"><i class="lnr lnr-chevron-up"></i></div>
-      <!-- /Arrows Nav -->
-
-      <!-- Main Content -->
-      <div id="main" class="site-main">
-        <!-- Page changer wrapper -->
-        <div class="pt-wrapper">
-          <!-- Subpages -->
-          <div class="subpages">
-
-            <!-- Home Subpage -->
-            <section class="pt-page" id="about-me">
-              <div class="section-inner start-page-full-width">
-                <div class="start-page-full-width">
-                  <div class="row">
-                    <div class="col-sm-12 col-md-6 col-lg-6">
-                        <div class="inner-content">
-                          <div class="fill-block"></div>
-                        </div>
-                    </div>
-                    <div class="col-sm-12 col-md-6 col-lg-6">
-                      <div class="inner-content">
-                        <div class="hp-text-block">
-                          <!-- Text rotation / Subtitle -->
-                          <div class="owl-carousel text-rotation">                                    
-                            <div class="item">
-                              <div class="sp-subtitle">Web Developer</div>
-                            </div>
-                            <div class="item">
-                              <div class="sp-subtitle">FullStack-Web developer</div>
-                            </div>
-                          </div>
-                          <!-- /Text rotation / Subtitle -->
-
-                          <h2 class="hp-main-title">Dwamena Bernard Osei</h2>
-                          <p>Enthusiastic software engineer eager to contribute to team success through hard work, attention to detail and excellent organizational skills. Clear understanding of Frontend and Backend technologies. Motivated to learn, grow and excel in the institution. 
-              Always prolific, full stack web developer with a passion for metrics and beating former &quot;best-yets.&quot; 
-              </p>
-                          <div class="hp-buttons">
-                            <a href="bernarddwamenaresume.pdf" target="_blank" class="btn btn-success" download="Bernard_Dwamena_Resume">Download CV</a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="section-inner custom-page-content">
-                <div class="page-content">
-                      
-                  <div class="row">
-                    <div class="col-xs-12 col-sm-12">
-                      <div class="col-inner">
-                        <div class="block-title">
-                            <h3>What I Do</h3>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                
-                  <div class="row">
-                    <div class="col-xs-12 col-sm-6">
-                      <div class="col-inner">
-                        <div class="info-list-w-icon">
-                          
-                          <div class="info-block-w-icon">
-                            <div class="ci-icon">
-                              <i class="lnr lnr-store"></i>
-                            </div>
-                            <div class="ci-text">
-                              <h4>Ecommerce</h4>
-                              <p>Pellentesque pellentesque, ipsum sit amet auctor accumsan, odio tortor bibendum massa, sit amet ultricies ex lectus scelerisque nibh. Ut non sodales odio.</p>
-                            </div>
-                          </div>
-                          
-                          <div class="info-block-w-icon">
-                            <div class="ci-icon">
-                              <i class="lnr lnr-laptop-phone"></i>
-                            </div>
-                            <div class="ci-text">
-                              <h4>Web Design</h4>
-                              <p>Pellentesque pellentesque, ipsum sit amet auctor accumsan, odio tortor bibendum massa, sit amet ultricies ex lectus scelerisque nibh. Ut non sodales odio.</p>
-                            </div>
-                          </div>
-                          
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="col-xs-12 col-sm-6">
-                      <div class="col-inner">
-                        <div class="info-list-w-icon">
-                          
-                          <div class="info-block-w-icon">
-                            <div class="ci-icon">
-                              <i class="lnr lnr-pencil"></i>
-                            </div>
-                            <div class="ci-text">
-                              <h4>Copywriter</h4>
-                              <p>Pellentesque pellentesque, ipsum sit amet auctor accumsan, odio tortor bibendum massa, sit amet ultricies ex lectus scelerisque nibh. Ut non sodales odio.</p>
-                            </div>
-                          </div>
-                          
-                          <div class="info-block-w-icon">
-                            <div class="ci-icon">
-                              <i class="lnr lnr-flag"></i>
-                            </div>
-                            <div class="ci-text">
-                              <h4>Management</h4>
-                              <p>Pellentesque pellentesque, ipsum sit amet auctor accumsan, odio tortor bibendum massa, sit amet ultricies ex lectus scelerisque nibh. Ut non sodales odio.</p>
-                            </div>
-                          </div>
-                          
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  
-                  <div class="row">
-                    <div class="col-xs-12 col-sm-12">
-                      <div class="col-inner ts-25 bs-50">
-                        
-                        <div class="block-title">
-                            <h3>Testimonials<span></span></h3>
-                        </div>
-                        
-                        <div class="testimonials owl-carousel">
-                          
-                          <div class="testimonial-item">
-
-                            
-                            <div class="testimonial-content">
-                              <div class="testimonial-text">
-                                <p>Nam tempor commodo mi id sodales. Aenean sit amet nibh nec sapien consequat porta a sit amet diam.</p>
-                              </div>
-                            </div>            
-                           
-                            <div class="testimonial-credits">
-                              
-                              <div class="testimonial-picture">
-                                <img src="images/testimonials/testimonial-2.jpg" alt="Gary Johnson"/>
-                              </div>              
-                              
-                              <div class="testimonial-author-info">
-                                <p class="testimonial-author">Gary Johnson</p>
-                                <p class="testimonial-firm">Locost Accessories</p>
-                              </div>
-                            </div>
-                              
-
-                          </div>
-                         
-                          <div class="testimonial-item">
-
-                            
-                            <div class="testimonial-content">
-                              <div class="testimonial-text">
-                                <p>Donec eu est vel metus consequat volutpat. Nunc aliquet euismod mauris, a feugiat urna ullamcorper non.</p>
-                              </div>
-                            </div>            
-                           
-                            <div class="testimonial-credits">
-                             
-                              <div class="testimonial-picture">
-                                <img src="images/testimonials/testimonial-1.jpg" alt="Daniel Pringle"/>
-                              </div>              
-                              
-                              <div class="testimonial-author-info">
-                                <p class="testimonial-author">Daniel Pringle</p>
-                                <p class="testimonial-firm">Rolling Thunder</p>
-                              </div>
-                            </div>
-                             
-                          </div>
-                         
-                          <div class="testimonial-item">
-
-                            <div class="testimonial-content">
-                              <div class="testimonial-text">
-                                <p>Etiam pretium ipsum quis justo dictum accumsan. Phasellus egestas odio a velit scelerisque, imperdiet elementum lorem aliquet.</p>
-                              </div>
-                            </div>            
-                           
-                            <div class="testimonial-credits">
-                              
-                              <div class="testimonial-picture">
-                                <img src="images/testimonials/testimonial-3.jpg" alt="Billy Adams"/>
-                              </div>              
-                              
-                              <div class="testimonial-author-info">
-                                <p class="testimonial-author">Billy Adams</p>
-                                <p class="testimonial-firm">Sagebrush</p>
-                              </div>
-                            </div>
-                            
-                          </div>
-                          
-                        </div>
-                        
-                      </div>
-                    </div>
-                  </div>
-                  
-                  <div class="row">
-                    <div class="col-xs-12 col-sm-12">
-                      <div class="col-inner">
-                        
-                        <div class="block-title">
-                          <h3>Clients<span></span></h3>
-                        </div>
-                       
-                        <div class="clients owl-carousel">
-                          <div class="client-block">
-                            <a href="#" target="_blank" title="Logo">
-                              <img src="images/clients/client-7.png" alt="Logo">
-                            </a>
-                          </div>
-                          <div class="client-block">
-                            <a href="#" target="_blank" title="Logo">
-                              <img src="images/clients/client-6.png" alt="Logo">
-                            </a>
-                          </div>
-                          <div class="client-block">
-                            <a href="#" target="_blank" title="Logo">
-                              <img src="images/clients/client-5.png" alt="Logo">
-                            </a>
-                          </div>
-                          <div class="client-block">
-                            <a href="#" target="_blank" title="Logo">
-                              <img src="images/clients/client-4.png" alt="Logo">
-                            </a>
-                          </div>
-                          <div class="client-block">
-                            <a href="#" target="_blank" title="Logo">
-                              <img src="images/clients/client-3.png" alt="Logo">
-                            </a>
-                          </div>
-                          <div class="client-block">
-                            <a href="#" target="_blank" title="Logo">
-                              <img src="images/clients/client-2.png" alt="Logo">
-                            </a>
-                          </div>
-                          <div class="client-block">
-                            <a href="#" target="_blank" title="Logo">
-                              <img src="images/clients/client-1.png" alt="Logo">
-                            </a>
-                          </div>  
-                        </div>
-                        
-                      </div>
-                    </div>
-                  </div>
-                  
-                </div>
-              </div>
-            </section>
-            <!-- End of Home Subpage -->
-
-            <!-- Resume Subpage -->
-            <section class="pt-page" id="resume">
-              <div class="section-inner custom-page-content">
-                <div class="section-title-block second-style">
-                  <h2 class="section-title">Resume</h2>
-                 <!-- <h5 class="section-description">3 Years of Freelance Experience</h5>-->
-                </div>
-
-                <div class="section-content">
-                  <div class="row">
-                    <div class="col-xs-12 col-sm-8">
-                      <div class="col-inner bs-30">
-                        <div class="block-title">
-                            <h3>Education</h3>
-                        </div>
-
-                        <div class="timeline timeline-second-style bs-30 clearfix">
-                          <div class="timeline-item clearfix">
-                            <div class="left-part">
-                              <h5 class="item-period">2020</h5>
-                              <span class="item-company">National Institute of Information Technology(NIIT Ghana, Tema)</span>
-                            </div>
-                            <div class="divider"></div>
-                            <div class="right-part">
-                              <h4 class="item-title">Diploma in Web Development</h4>
-                              <p>I went through rigorous training in building robust applications for mobile, desktop and the web. </p>
-                            </div>
-                          </div>
-
-                          <div class="timeline-item clearfix">
-                            <div class="left-part">
-                              <h5 class="item-period">2018</h5>
-                              <span class="item-company">Ghana Technology University College (GTUC)</span>
-                            </div>
-                            <div class="divider"></div>
-                            <div class="right-part">
-                              <h4 class="item-title">Bsc. Informatics Technology (I.T)</h4>
-                              <p>Followed my passion in a core of prototyping and web development.</p>
-                            </div>
-                          </div>
-                        </div>
-
-                        <div class="block-title">
-                            <h3>Experience<span></span></h3>
-                        </div>
-
-
-                        <div class="timeline timeline-second-style clearfix">
-                          <div class="timeline-item clearfix">
-                            <div class="left-part">
-                              <h5 class="item-period">2020 - 2020</h5>
-                              <span class="item-company">Upwork Inc.</span>
-                            </div>
-                            <div class="divider"></div>
-                            <div class="right-part">
-                              <h4 class="item-title">Lead Ui/Ux Designer</h4>
-                              <p>Conducted testing and review of website design for responsiveness, clarity and effectiveness.</p>
-                            </div>
-                          </div>
-
-                          <div class="timeline-item clearfix">
-                            <div class="left-part">
-                              <h5 class="item-period">2020 - 2020</h5>
-                              <span class="item-company">Upwork Inc.</span>
-                                    </div>
-                            <div class="divider"></div>
-                            <div class="right-part">
-                              <h4 class="item-title">Freelance web development</h4>
-                              <p>Conducted testing and review of website design for responsiveness, clarity and effectiveness.</p>
-                            </div>
-                          </div>
-
-                          <div class="timeline-item clearfix">
-                            <div class="left-part">
-                              <h5 class="item-period">2020 - 2020</h5>
-                              <span class="item-company">Fiverr</span>
-                                    </div>
-                            <div class="divider"></div>
-                            <div class="right-part">
-                              <h4 class="item-title">Junior Ui/Ux Designer</h4>
-                              <p>Developed a cooperate website, conducted testing and review of website.</p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="col-xs-12 col-sm-4">
-                      <div class="col-inner">
-
-                        <div class="block-title">
-                          <h3>Soft Skills<span></span></h3>
-                        </div>
-
-                        <div class="skills-info skills-second-style">
-                          <!-- Skill 1 -->
-                          <div class="clearfix">
-                            <h4>DNS Management</h4>
-                            <div class="skill-value">95%</div>
-                          </div>
-                          <div class="skill-container">
-                            <div class="skill-percentage skill-1"></div>
-                          </div>
-                          <!-- /Skill 1 -->
-
-                          <!-- Skill 2 -->
-                          <div class="clearfix">
-                            <h4>Photoshop</h4>
-                            <div class="skill-value">65%</div>
-                          </div>
-                          <div class="skill-container">
-                            <div class="skill-percentage skill-2"></div>
-                          </div>
-                          <!-- /Skill 2 -->
-
-                          <!-- Skill 3 -->
-                          <div class="clearfix">
-                            <h4>Git</h4>
-                            <div class="skill-value">80%</div>
-                          </div>
-                          <div class="skill-container">
-                            <div class="skill-percentage skill-3"></div>
-                          </div>
-                          <!-- /Skill 3 -->
-                          
-                          <!-- Skill 4 -->
-                          <div class="clearfix">
-                            <h4>Dream Weaver</h4>
-                            <div class="skill-value">90%</div>
-                          </div>
-                          <div class="skill-container">
-                            <div class="skill-percentage skill-4"></div>
-                          </div>
-                          <!-- /Skill 4 -->
-                        </div>
-
-                        <div class="block-title ts-10">
-                          <h3>Coding Skills<span></span></h3>
-                        </div>
-
-
-                        <div class="skills-info skills-second-style">
-                          <!-- Skill 5 -->
-                          <div class="clearfix">
-                            <h4>JavaScript / JQuery / AngularJs</h4>
-                            <div class="skill-value">85%</div>
-                          </div>
-                          <div class="skill-container">
-                            <div class="skill-percentage skill-5"></div>
-                          </div>
-                          <!-- /Skill 5 -->
-
-                          <!-- Skill 6 -->
-                          <div class="clearfix">
-                            <h4>PHP</h4>
-                            <div class="skill-value">80%</div>
-                          </div>
-                          <div class="skill-container">
-                            <div class="skill-percentage skill-6"></div>
-                          </div>
-                          <!-- /Skill 6 -->
-
-                          <!-- Skill 7 -->
-                          <div class="clearfix">
-                            <h4>Python</h4>
-                            <div class="skill-value">67%</div>
-                          </div>
-                          <div class="skill-container">
-                            <div class="skill-percentage skill-7"></div>
-                          </div>
-                          <!-- /Skill 7 -->
-
-                          <!-- Skill 8 -->
-                          <div class="clearfix">
-                            <h4>SQL</h4>
-                            <div class="skill-value">90%</div>
-                          </div>
-                          <div class="skill-container">
-                            <div class="skill-percentage skill-8"></div>
-                          </div>
-                          <!-- /Skill 8 -->
-
-                          <!-- Skill 9 -->
-                          <div class="clearfix">
-                            <h4>HTML / CSS</h4>
-                            <div class="skill-value">100%</div>
-                          </div>
-                          <div class="skill-container">
-                            <div class="skill-percentage skill-9"></div>
-                          </div>
-                          <!-- /Skill 9 -->
-
-                          <!-- Skill 10 -->
-                          <div class="clearfix">
-                            <h4>C / C++ / Visual Basic</h4>
-                            <div class="skill-value">80%</div>
-                          </div>
-                          <div class="skill-container">
-                            <div class="skill-percentage skill-10"></div>
-                          </div>
-                          <!-- /Skill 10 -->
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="row">
-                    <div class="col-xs-12 col-sm-6">
-                      <div class="col-inner ts-30">
-                        <a href="BernardDwamenaRESUME.docx" target="_blank" class="btn btn-primary" download="download">Download CV</a>
-                      </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-6">
-                      <div class="col-inner ts-30">
-                        <a href="EWBv1.01.rar" target="_blank" class="btn btn-primary" download="download">Download Eduqii browser V1.01</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </section>
-            <!-- End of Resume Subpage -->
-
-
-            <!-- Portfolio Subpage -->
-            <section class="pt-page" id="portfolio">
-              <div class="section-inner custom-page-content">
-                <div class="section-title-block second-style">
-                  <h2 class="section-title">Portfolio</h2>
-                  <h5 class="section-description">My Works</h5>
-                </div>
-          
-                <div class="section-content">
-                  <div class="row">
-                    <div class="col-xs-12 col-sm-12">
-                      <!-- Portfolio Content -->
-                      <div class="portfolio-content">
-
-                        <ul class="portfolio-filters">
-                          <li class="active">
-                            <a class="filter btn btn-sm btn-link" data-group="category_all">All</a>
-                          </li>
-                          <li>
-                            <a class="filter btn btn-sm btn-link" data-group="category_media">Media</a>
-                          </li>
-                          <li>
-                            <a class="filter btn btn-sm btn-link" data-group="category_mockups">Mockups</a>
-                          </li>
-                          <li>
-                            <a class="filter btn btn-sm btn-link" data-group="category_soundcloud">SoundCloud</a>
-                          </li>
-                          <li>
-                            <a class="filter btn btn-sm btn-link" data-group="category_vimeo-videos">Vimeo Videos</a>
-                          </li>
-                          <li>
-                            <a class="filter btn btn-sm btn-link" data-group="category_youtube-videos">YouTube Videos</a>
-                          </li>
-                        </ul>
-
-                        <!-- Portfolio Grid -->
-                        <div class="portfolio-grid three-columns">
-                          
-                          <figure class="item lbaudio" data-groups='["category_all", "category_soundcloud"]'>
-                            <div class="portfolio-item-img">
-                              <img src="images/portfolio/1.jpg" alt="SoundCloud Audio" title="" />
-                              <a href="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/221650664&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true&amp;visual=true" class="lightbox mfp-iframe" title="SoundCloud Audio"></a>
-                            </div>
-
-                            <i class="fa fa-volume-up"></i>
-                            <h4 class="name">SoundCloud Audio</h4>
-                            <span class="category">SoundCloud</span>
-                          </figure>
-
-                          <figure class="item standard" data-groups='["category_all", "category_media"]'>
-                            <div class="portfolio-item-img">
-                              <img src="images/portfolio/2.jpg" alt="Media Project 2" title="" />
-                              <a href="portfolio-1.html" class="ajax-page-load"></a>
-                            </div>
-
-                            <i class="far fa-file-alt"></i>
-                            <h4 class="name">Media Project 2</h4>
-                            <span class="category">Media</span>
-                          </figure>
-
-                          <figure class="item lbvideo" data-groups='["category_all", "category_vimeo-videos"]'>
-                            <div class="portfolio-item-img">
-                              <img src="images/portfolio/3.jpg" alt="Vimeo Video 1" title="" />
-                              <a href="https://player.vimeo.com/video/158284739" class="lightbox mfp-iframe" title="Vimeo Video 1"></a>
-                            </div>
-
-                            <i class="fas fa-video"></i>
-                            <h4 class="name">Vimeo Video 1</h4>
-                            <span class="category">Vimeo Videos</span>
-                          </figure>
-
-                          <figure class="item standard" data-groups='["category_all", "category_media"]'>
-                            <div class="portfolio-item-img">
-                              <img src="images/portfolio/4.jpg" alt="Media Project 1" title="" />
-                              <a href="portfolio-1.html" class="ajax-page-load"></a>
-                            </div>
-
-                            <i class="far fa-file-alt"></i>
-                            <h4 class="name">Media Project 1</h4>
-                            <span class="category">Media</span>
-                          </figure>
-
-                          <figure class="item lbimage" data-groups='["category_all", "category_mockups"]'>
-                            <div class="portfolio-item-img">
-                              <img src="images/portfolio/5.jpg" alt="Mockup Design 1" title="" />
-                              <a class="lightbox" title="Mockup Design 1" href="images/portfolio/5.jpg"></a>
-                            </div>
-
-                            <i class="far fa-image"></i>
-                            <h4 class="name">Mockup Design 1</h4>
-                            <span class="category">Mockups</span>
-                          </figure>
-
-                          <figure class="item lbvideo" data-groups='["category_all", "category_youtube-videos"]'>
-                            <div class="portfolio-item-img">
-                              <img src="images/portfolio/6.jpg" alt="YouTube Video 1" title="" />
-                              <a href="https://www.youtube.com/embed/_-tlcL-2TCw" class="lightbox mfp-iframe" title="YouTube Video 1"></a>
-                            </div>
-
-                            <i class="fas fa-video"></i>
-                            <h4 class="name">YouTube Video 1</h4>
-                            <span class="category">YouTube Videos</span>
-                          </figure>
-                        </div>
-                      </div>
-                      <!-- /Portfolio Content -->
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </section>
-            <!-- /Portfolio Subpage -->
-
-            <!-- Blog Subpage -->
-            <section class="pt-page" id="blog">
-              <div class="section-inner custom-page-content">
-                <div class="section-title-block second-style">
-                  <h2 class="section-title">Blog</h2>
-                  <h5 class="section-description">My Diary</h5>
-                </div>
-
-                <div class="section-content">
-                  <div class="row">
-                    <div class="col-xs-12 col-sm-12">
-                      <div class="blog-masonry two-columns clearfix">
-                        
-                        <!-- Blog Post 1 -->
-                        <div class="item post-1">
-                          <div class="blog-card">
-                            <div class="media-block">
-                              <div class="category">
-                                <a href="#" title="View all posts in UI">UI</a>
-                              </div>
-                              <a href="https://sites.google.com/view/withtheinsiders" target="_blank">
-                                <img src="images/blog/blog_post_6.jpg" class="size-blog-masonry-image-two-c" alt="Best Practices for Animated Progress Indicators" title="" />
-                                <div class="mask"></div>
-                              </a>
-                            </div>
-                            <div class="post-info">
-                              <div class="post-date">06 Apr 2018</div>
-                              <a href="https://sites.google.com/view/withtheinsiders" target="_blank">
-                                <h4 class="blog-item-title">Best Practices for Animated Progress Indicators</h4>
-                              </a>
-                            </div>
-                          </div>
-                        </div>
-                        <!-- End of Blog Post 1 -->
-
-                        <!-- Blog Post 2 -->
-                        <div class="item post-2">
-                          <div class="blog-card">
-                            <div class="media-block">
-                              <div class="category">
-                                <a href="#" title="View all posts in E-Commerce">E-Commerce</a>
-                              </div>
-                              <a href="https://sites.google.com/view/withtheinsiders" target="_blank">
-                                <img src="images/blog/blog_post_5.jpg" class="size-blog-masonry-image-two-c " alt="Designing the Perfect Feature Comparison Table" title="" />
-                                <div class="mask"></div>
-                              </a>
-                            </div>
-                            <div class="post-info">
-                              <div class="post-date">06 Apr 2018</div>
-                              <a href="https://sites.google.com/view/withtheinsiders" target="_blank">
-                                <h4 class="blog-item-title">Designing the Perfect Feature Comparison Table</h4>
-                              </a>
-                            </div>
-                          </div>
-                        </div>
-                        <!-- End of Blog Post 2 -->
-
-                        <!-- Blog Post 3 -->
-                        <div class="item post-3">
-                          <div class="blog-card">
-                            <div class="media-block">
-                              <div class="category">
-                                <a href="#" title="View all posts in E-Commerce">E-Commerce</a>
-                              </div>
-                              <a href="https://sites.google.com/view/withtheinsiders" target="_blank">
-                                <img src="images/blog/blog_post_4.jpg" class="size-blog-masonry-image-two-c" alt="An Overview of E-Commerce Platforms" title=""/>
-                                <div class="mask"></div>
-                              </a>
-                            </div>
-                            <div class="post-info">
-                              <div class="post-date">06 Apr 2018</div>
-                              <a href="https://sites.google.com/view/withtheinsiders" target="_blank">
-                                <h4 class="blog-item-title">An Overview of E-Commerce Platforms</h4>
-                              </a>
-                            </div>
-                          </div>
-                        </div>
-                        <!-- End of Blog Post 3 -->
-
-                        <!-- Blog Post 4 -->
-                        <div class="item post-4">
-                          <div class="blog-card">
-                            <div class="media-block">
-                              <div class="category">
-                                <a href="#" title="View all posts in Design">Design</a>
-                              </div>
-                              <a href="https://sites.google.com/view/withtheinsiders" target="_blank">
-                                <img src="images/blog/blog_post_3.jpg" class="size-blog-masonry-image-two-c" alt="Why I Switched to Sketch For UI Design" title="" />
-                                <div class="mask"></div>
-                                </a>
-                            </div>
-                            <div class="post-info">
-                              <div class="post-date">06 Apr 2018</div>
-                              <a href="https://sites.google.com/view/withtheinsiders" target="_blank">
-                                <h4 class="blog-item-title">Why I Switched to Sketch For UI Design</h4>
-                              </a>
-                            </div>
-                          </div>
-                        </div>
-                        <!-- End of Blog Post 4 -->
-                        
-                        <!-- Blog Post 5 -->
-                        <div class="item post-5">
-                          <div class="blog-card">
-                            <div class="media-block">
-                              <div class="category">
-                                <a href="#" title="View all posts in UI">UI</a>
-                              </div>
-                              <a href="https://sites.google.com/view/withtheinsiders" target="_blank">
-                                <img src="images/blog/blog_post_2.jpg" class="size-blog-masonry-image-two-c" alt="Creative and Innovative Navigation Designs" title="" />
-                                <div class="mask"></div>
-                              </a>
-                            </div>
-                            <div class="post-info">
-                                <div class="post-date">06 Apr 2018</div>
-                                <a href="https://sites.google.com/view/withtheinsiders" target="_blank">
-                                  <h4 class="blog-item-title">Creative and Innovative Navigation Designs</h4>
-                                </a>
-                            </div>
-                          </div>
-                        </div>
-                        <!-- End of Blog Post 5 -->
-                        
-                        <!-- Blog Post 6 -->
-                        <div class="item post-6">
-                          <div class="blog-card">
-                            <div class="media-block">
-                              <div class="category">
-                                <a href="#" title="View all posts in Design">Design</a>
-                              </div>
-                              <a href="https://sites.google.com/view/withtheinsiders" target="_blank">
-                                <img src="images/blog/blog_post_1.jpg" class="size-blog-masonry-image-two-c" alt="6 Easy Steps to Better Icon Design" title="" />
-                                <div class="mask"></div>
-                              </a>
-                            </div>
-                            <div class="post-info">
-                              <div class="post-date">06 Apr 2018</div>
-                              <a href="https://sites.google.com/view/withtheinsiders" target="_blank"><h4 class="blog-item-title">6 Easy Steps to Better Icon Design</h4></a>
-                            </div>
-                          </div>
-                        </div>
-                        <!-- End of Blog Post 6 -->
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </section>
-            <!-- /Blog Subpage -->
-
-            <!-- Contact Subpage -->
-            <section class="pt-page" id="contact">
-              <div class="section-inner custom-page-content">
-                <div class="section-title-block second-style">
-                  <h2 class="section-title">Contact</h2>
-                  <h5 class="section-description">Get in Touch</h5>
-                </div>
-
-                <div class="section-content">
-                  <!-- Google Map -->
-                  <div class="row">
-                    <div class="col-xs-12 col-sm-12">
-                      <div id="map" class="map"></div><!-- Change your address in the js/main.js file. More info in the documentation. -->
-                    </div>
-                  </div>
-                  <!-- /Google Map -->
-
-                  <!-- Contact Info -->
-                  <div class="row">
-                    <div class="col-xs-12 col-sm-3">
-                      <div class="col-inner bs-30">
-                        <div class="lm-info-block gray-default">
-                          <i class="lnr lnr-phone-handset"></i>
-                          <h4><a href="tel:0500518387"><span style="color: white;">050-051-8387</span></a></h4>
-                          <span class="lm-info-block-value"></span>
-                          <span class="lm-info-block-text"></span>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="col-xs-12 col-sm-3">
-                      <div class="col-inner bs-30">
-                        <div class="lm-info-block gray-default">
-                          <i class="lnr lnr-map-marker"></i>
-                          <h4>Agape-Ablekuma, Accra</h4>
-                          <span class="lm-info-block-value"></span>
-                          <span class="lm-info-block-text"></span>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="col-xs-12 col-sm-3">
-                      <div class="col-inner bs-30">
-                        <div class="lm-info-block gray-default">
-                          <i class="lnr lnr-envelope"></i>
-                          <h4><a href="mailto:bernarddwamena.applicant@gmail.com"><span style="color: white;">Mail</span></a></h4>
-                          <span class="lm-info-block-value"></span>
-                          <span class="lm-info-block-text"></span>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="col-xs-12 col-sm-3">
-                      <div class="col-inner bs-30">
-                        <div class="lm-info-block gray-default">
-                          <i class="lnr lnr-checkmark-circle"></i>
-                          <h4> Available</h4>
-                          <span class="lm-info-block-value"></span>
-                          <span class="lm-info-block-text"></span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- /Contact Info -->
-
-                  <!-- Contact form -->
-                  <!--
-                  <div class="row">
-                    <div class=" col-xs-12 col-sm-8 offset-sm-1 offset-sm-2">
-                      <div class="col-inner ts-20">
-                        <div class="block-title">
-                          <h3>How Can I Help You?</h3>
-                        </div>
-
-                        <form id="contact_form" class="contact-form" action="https://lmpixels.com/demo/kerge-html/one-page/version-1-dark/contact_form/contact_form.php" method="post">
-
-                          <div class="messages"></div>
-
-                          <div class="controls two-columns">
-                            <div class="fields clearfix">
-                              <div class="left-column">
-                                <div class="form-group form-group-with-icon">
-                                  <input id="form_name" type="text" name="name" class="form-control" placeholder="Full Name" required="required" data-error="Name is required.">
-                                  <div class="form-control-border"></div>
-                                  <div class="help-block with-errors"></div>
-                                </div>
-
-                                <div class="form-group form-group-with-icon">
-                                  <input id="form_email" type="email" name="email" class="form-control" placeholder="Email Address" required="required" data-error="Valid email is required.">
-                                  <div class="form-control-border"></div>
-                                  <div class="help-block with-errors"></div>
-                                </div>
-
-                                <div class="form-group form-group-with-icon">
-                                  <input id="form_subject" type="text" name="subject" class="form-control" placeholder="Subject" required="required" data-error="Subject is required.">
-                                  <div class="form-control-border"></div>
-                                  <div class="help-block with-errors"></div>
-                                </div>
-                              </div>
-                              <div class="right-column">
-                                <div class="form-group form-group-with-icon">
-                                  <textarea id="form_message" name="message" class="form-control" placeholder="Message" rows="7" required="required" data-error="Please, leave me a message."></textarea>
-                                  <div class="form-control-border"></div>
-                                  <div class="help-block with-errors"></div>
-                                </div>
-                              </div>
-                            </div>
-
-                            <div class="g-recaptcha" data-sitekey="6LdqmCAUAAAAAMMNEZvn6g4W5e0or2sZmAVpxVqI"></div>
-        
-                            <input type="submit" class="button btn-send" value="Send message">
-                          </div>
-                        </form>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- /Contact form -->
-                </div>
-              </div>
-            </section>
-            <!-- End Contact Subpage -->
-
-          </div>
-        </div>
-        <!-- /Page changer wrapper -->
-      </div>
-      <!-- /Main Content -->
+  <body class="d-flex h-100 text-center text-bg-dark">
+    <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+      <symbol id="check2" viewBox="0 0 16 16">
+        <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+      </symbol>
+      <symbol id="circle-half" viewBox="0 0 16 16">
+        <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"/>
+      </symbol>
+      <symbol id="moon-stars-fill" viewBox="0 0 16 16">
+        <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"/>
+        <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"/>
+      </symbol>
+      <symbol id="sun-fill" viewBox="0 0 16 16">
+        <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
+      </symbol>
+    </svg>
+
+    <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
+      <button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center"
+              id="bd-theme"
+              type="button"
+              aria-expanded="false"
+              data-bs-toggle="dropdown"
+              aria-label="Toggle theme (auto)">
+        <svg class="bi my-1 theme-icon-active" width="1em" height="1em"><use href="#circle-half"></use></svg>
+        <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
+      </button>
+      <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bd-theme-text">
+        <li>
+          <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false">
+            <svg class="bi me-2 opacity-50" width="1em" height="1em"><use href="#sun-fill"></use></svg>
+            Light
+            <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+          </button>
+        </li>
+        <li>
+          <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false">
+            <svg class="bi me-2 opacity-50" width="1em" height="1em"><use href="#moon-stars-fill"></use></svg>
+            Dark
+            <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+          </button>
+        </li>
+        <li>
+          <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto" aria-pressed="true">
+            <svg class="bi me-2 opacity-50" width="1em" height="1em"><use href="#circle-half"></use></svg>
+            Auto
+            <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+          </button>
+        </li>
+      </ul>
     </div>
 
-    <script data-cfasync="false" src="../../../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="js/jquery-2.1.3.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/imagesloaded.pkgd.min.js"></script>
-    <script src="js/jquery.malihu.PageScroll2id.min.js"></script>
-    <script src="js/jquery.shuffle.min.js"></script>
-    <script src="js/masonry.pkgd.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/jquery.magnific-popup.min.js"></script>
-    <script src="js/jquery.googlemap.js"></script>
-    <script src="js/validator.js"></script>
-    <script src='../../../../../www.google.com/recaptcha/api.js'></script>
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCrDf32aQTCVENBhFJbMBKOUTiUAABtC2o"></script>
-    <script src="js/main.js"></script>
-  </body>
+    
+<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+  <header class="mb-auto">
+    <div>
+      <h3 class="float-md-start mb-0">BAS</h3>
+      <nav class="nav nav-masthead justify-content-center float-md-end">
+        <a class="nav-link fw-bold py-1 px-0 active" aria-current="page" href="#">Home</a>
+        <a class="nav-link fw-bold py-1 px-0" href="https://www.benitapollosolutions.com/basservices.html">Services</a>                
+        <a class="nav-link fw-bold py-1 px-0" href="#">Events</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="px-3">
+    <h1>Bas for Business.</h1>
+    <p class="lead">Solve business challenges with Information Technology.</p>
+    <p class="lead">
+      <a href="javascript:void(0)" class="btn btn-lg btn-light fw-bold border-white bg-white" id="learnmore">Learn more</a>
+    </p>
+  </main>
+
+  <footer class="mt-auto text-white-50">
+    <p>Transforming software into solutions for <a href="https://bit.ly/basonlinegh" class="text-white" target="_blank"> businesses</a>, by <a href="https://www.instagram.com/benitapollosolutions?igsh=OHljdWh2cmdoZWNs" class="text-white" target="_blank">@benitapollosolutions</a>.</p>
+  </footer>
+</div>
+<script src="https://www.benitapollosolutions.com/bootstrap.bundle.min.js"></script>
+
+    </body>
 </html>
